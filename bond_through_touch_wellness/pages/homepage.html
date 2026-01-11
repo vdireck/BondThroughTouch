@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bond Through Touch Wellness - Sanctuaire de guérison holistique offrant des services de massage, doula, coaching somatique et sagesse ancestrale pour les familles noires et communautés marginalisées au Québec">
+    <title>Bond Through Touch Wellness - Sanctuaire de Guérison Holistique</title>
+    <link rel="stylesheet" href="../css/main.css">
+  </head>
+<body class="bg-background-50">
+    
+    <!-- Navigation Header -->
+    <header class="backdrop-sanctuary fixed top-0 left-0 right-0 z-50 border-b border-subtle">
+        <nav class="sanctuary-container py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="homepage.html" class="flex items-center gap-3 group">
+                    <svg class="w-12 h-12 transition-transform duration-base group-hover:scale-105" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="22" fill="#410357" opacity="0.1"/>
+                        <path d="M24 8C15.163 8 8 15.163 8 24s7.163 16 16 16 16-7.163 16-16S32.837 8 24 8zm0 28c-6.627 0-12-5.373-12-12S17.373 12 24 12s12 5.373 12 12-5.373 12-12 12z" fill="#410357"/>
+                        <path d="M24 16c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" fill="#724978"/>
+                        <circle cx="24" cy="24" r="3" fill="#cea4f7"/>
+                    </svg>
+                    <div>
+                        <h1 class="font-headline text-2xl text-primary">Bond Through Touch</h1>
+                        <p class="text-xs text-text-secondary">Guérison par la connexion</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="homepage.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Accueil</a>
+                    <a href="services.html" class="text-text-secondary hover:text-primary transition-colors duration-fast">Services</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary transition-colors duration-fast">À Propos</a>
+                    <a href="resources.html" class="text-text-secondary hover:text-primary transition-colors duration-fast">Ressources</a>
+                    <a href="community.html" class="text-text-secondary hover:text-primary transition-colors duration-fast">Communauté</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary transition-colors duration-fast">Contact</a>
+                    <a href="booking.html" class="btn-primary">Réserver</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-primary" aria-label="Menu de navigation">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="hidden lg:hidden mt-4 pb-4 border-t border-subtle pt-4">
+                <div class="flex flex-col gap-4">
+                    <a href="homepage.html" class="text-primary font-semibold">Accueil</a>
+                    <a href="services.html" class="text-text-secondary">Services</a>
+                    <a href="about.html" class="text-text-secondary">À Propos</a>
+                    <a href="resources.html" class="text-text-secondary">Ressources</a>
+                    <a href="community.html" class="text-text-secondary">Communauté</a>
+                    <a href="contact.html" class="text-text-secondary">Contact</a>
+                    <a href="booking.html" class="btn-primary w-full text-center">Réserver</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Ambient Background -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1243057da-1766983052382.png" 
+                 alt="Espace de guérison paisible avec lumière naturelle douce et éléments naturels créant une atmosphère de sanctuaire" 
+                 class="w-full h-full object-cover"
+                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-background-50/95"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="sanctuary-container relative z-10 text-center stagger-fade-in">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-headline text-5xl md:text-7xl text-white mb-6 breath-animation">
+                    Guérison par la connexion, un toucher à la fois
+                </h2>
+                <p class="text-xl md:text-2xl text-background-50 mb-8 font-light">
+                    Sanctuaire de bien-être holistique enraciné dans la sagesse ancestrale et les soins modernes
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="booking.html" class="btn-primary text-lg px-8 py-4">Commencer votre voyage</a>
+                    <a href="services.html" class="btn-ghost text-white border-white hover:bg-white/10 text-lg px-8 py-4">Explorer les espaces</a>
+                </div>
+                
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-3 gap-6 mt-16 max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-4xl font-headline text-accent-300 mb-2">500+</div>
+                        <div class="text-sm text-background-100">Familles servies</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-headline text-accent-300 mb-2">15+</div>
+                        <div class="text-sm text-background-100">Années d'expérience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-headline text-accent-300 mb-2">98%</div>
+                        <div class="text-sm text-background-100">Satisfaction client</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 breath-animation">
+            <svg class="w-6 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Interactive Floor Plan Section -->
+    <section class="py-20 bg-surface-50">
+        <div class="sanctuary-container">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-4xl md:text-5xl text-primary mb-4">Explorez nos espaces de guérison</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+                    Chaque espace est conçu pour votre voyage unique vers le bien-être
+                </p>
+            </div>
+
+            <!-- Floor Plan Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- Massage Sanctuary -->
+                <a href="services.html#massage" class="card-sanctuary group hover:scale-105 transition-transform duration-base">
+                    <div class="relative h-48 mb-4 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1630835425197-50feeba99ecd" 
+                             alt="Salle de massage sereine avec table de massage, bougies douces et décoration naturelle" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-slow"
+                             onerror="this.src='https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2940'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 badge-success">Disponible</div>
+                    </div>
+                    <h3 class="font-headline text-2xl text-primary mb-2">Sanctuaire de Massage</h3>
+                    <p class="text-text-secondary mb-4">Thérapie corporelle et libération des traumatismes</p>
+                    <div class="flex items-center text-secondary font-medium">
+                        <span>Explorer l'espace</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform duration-base" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Doula Support Haven -->
+                <a href="services.html#doula" class="card-sanctuary group hover:scale-105 transition-transform duration-base">
+                    <div class="relative h-48 mb-4 rounded-xl overflow-hidden">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_19d9a886c-1767343311694.png" 
+                             alt="Espace de soutien doula chaleureux avec sièges confortables et atmosphère accueillante pour les familles" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-slow"
+                             onerror="this.src='https://images.pexels.com/photos/3759657/pexels-photo-3759657.jpeg'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 badge-success">Disponible</div>
+                    </div>
+                    <h3 class="font-headline text-2xl text-primary mb-2">Havre de Soutien Doula</h3>
+                    <p class="text-text-secondary mb-4">Accompagnement de fertilité à postpartum</p>
+                    <div class="flex items-center text-secondary font-medium">
+                        <span>Explorer l'espace</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform duration-base" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Family Bonding Studio -->
+                <a href="services.html#family" class="card-sanctuary group hover:scale-105 transition-transform duration-base">
+                    <div class="relative h-48 mb-4 rounded-xl overflow-hidden">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_15574018a-1768089217468.png" 
+                             alt="Studio de liaison familiale avec espace de jeu doux et zones d'apprentissage pour parents et enfants" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-slow"
+                             onerror="this.src='https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=2940'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 badge-warning">Places limitées</div>
+                    </div>
+                    <h3 class="font-headline text-2xl text-primary mb-2">Studio de Liaison Familiale</h3>
+                    <p class="text-text-secondary mb-4">Massage infantile et ateliers de connexion</p>
+                    <div class="flex items-center text-secondary font-medium">
+                        <span>Explorer l'espace</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform duration-base" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Sacred Healing Chamber -->
+                <a href="services.html#healing" class="card-sanctuary group hover:scale-105 transition-transform duration-base">
+                    <div class="relative h-48 mb-4 rounded-xl overflow-hidden">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1c2fb459e-1766473656643.png" 
+                             alt="Chambre de guérison sacrée avec éclairage ambiant doux, cristaux et éléments spirituels" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-slow"
+                             onerror="this.src='https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2940'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 badge-success">Disponible</div>
+                    </div>
+                    <h3 class="font-headline text-2xl text-primary mb-2">Chambre de Guérison Sacrée</h3>
+                    <p class="text-text-secondary mb-4">Coaching somatique et sagesse ancestrale</p>
+                    <div class="flex items-center text-secondary font-medium">
+                        <span>Explorer l'espace</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform duration-base" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Wisdom Library -->
+                <a href="resources.html" class="card-sanctuary group hover:scale-105 transition-transform duration-base">
+                    <div class="relative h-48 mb-4 rounded-xl overflow-hidden">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1027416e8-1768089218683.png" 
+                             alt="Bibliothèque de sagesse avec livres, ressources et espace d'apprentissage confortable" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-slow"
+                             onerror="this.src='https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 bg-accent/20 text-primary px-3 py-1 rounded-full text-sm font-medium">Nouveau</div>
+                    </div>
+                    <h3 class="font-headline text-2xl text-primary mb-2">Bibliothèque de Sagesse</h3>
+                    <p class="text-text-secondary mb-4">Ressources éducatives et guides</p>
+                    <div class="flex items-center text-secondary font-medium">
+                        <span>Explorer l'espace</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform duration-base" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Nora's Office -->
+                <a href="about.html" class="card-sanctuary group hover:scale-105 transition-transform duration-base">
+                    <div class="relative h-48 mb-4 rounded-xl overflow-hidden">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1ae1c54e0-1767877481235.png" 
+                             alt="Bureau personnel de Nora avec décoration chaleureuse et espace de consultation intime" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-slow"
+                             onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2940'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 badge-success">Consultations ouvertes</div>
+                    </div>
+                    <h3 class="font-headline text-2xl text-primary mb-2">Bureau de Nora</h3>
+                    <p class="text-text-secondary mb-4">Connexion personnelle et consultations</p>
+                    <div class="flex items-center text-secondary font-medium">
+                        <span>Rencontrer Nora</span>
+                        <svg class="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform duration-base" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Testimonials Carousel -->
+    <section class="py-20 bg-gradient-to-b from-primary/5 to-transparent">
+        <div class="sanctuary-container">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-4xl md:text-5xl text-primary mb-4">Voix de notre communauté</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+                    Histoires de transformation et de guérison
+                </p>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="card-sanctuary">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://images.unsplash.com/photo-1708127851232-d1a1bcbd5449" 
+                             alt="Portrait de Amara Thompson, mère souriante et cliente satisfaite" 
+                             class="w-16 h-16 rounded-full object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-primary">Amara Thompson</h4>
+                            <p class="text-sm text-text-tertiary">Mère de deux enfants</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3">
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-text-secondary italic">
+                        "Nora a transformé mon expérience postpartum. Son approche holistique et sa compréhension culturelle m'ont aidée à guérir à la fois physiquement et émotionnellement."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="card-sanctuary">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_13bffc29e-1763294481331.png" 
+                             alt="Portrait de Marcus Johnson, père et client satisfait" 
+                             class="w-16 h-16 rounded-full object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-primary">Marcus Johnson</h4>
+                            <p class="text-sm text-text-tertiary">Nouveau père</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3">
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-text-secondary italic">
+                        "Le cours de massage infantile a renforcé mon lien avec mon fils. Nora crée un espace où les pères se sentent accueillis et soutenus."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="card-sanctuary">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="https://img.rocket.new/generatedImages/rocket_gen_img_18fc14fb3-1768089217450.png" 
+                             alt="Portrait de Zainab Rahman, cliente en parcours de fertilité" 
+                             class="w-16 h-16 rounded-full object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-primary">Zainab Rahman</h4>
+                            <p class="text-sm text-text-tertiary">Parcours de fertilité</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-1 mb-3">
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-warning" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-text-secondary italic">
+                        "Le soutien holistique de Nora pendant mon parcours de fertilité a été inestimable. Elle honore à la fois la science et la sagesse ancestrale."
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="community.html" class="btn-secondary">Lire plus d'histoires</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access & Emergency Support -->
+    <section class="py-16 bg-primary text-white">
+        <div class="sanctuary-container">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-headline text-4xl mb-6">Besoin d'un soutien immédiat?</h2>
+                    <p class="text-xl text-background-100 mb-8">
+                        Nous sommes là pour vous. Accédez à nos ressources d'urgence ou réservez une consultation prioritaire.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="booking.html" class="btn-accent">Réservation rapide</a>
+                        <a href="contact.html" class="btn-ghost border-white text-white hover:bg-white/10">Ressources d'urgence</a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                        <svg class="w-12 h-12 text-accent-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <h3 class="font-semibold text-lg mb-2">Disponibilité en temps réel</h3>
+                        <p class="text-background-100 text-sm">Consultez les créneaux disponibles instantanément</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                        <svg class="w-12 h-12 text-accent-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <h3 class="font-semibold text-lg mb-2">Support 24/7</h3>
+                        <p class="text-background-100 text-sm">Ligne d'assistance disponible jour et nuit</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                        <svg class="w-12 h-12 text-accent-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <h3 class="font-semibold text-lg mb-2">Réseau communautaire</h3>
+                        <p class="text-background-100 text-sm">Connectez-vous avec d'autres familles</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                        <svg class="w-12 h-12 text-accent-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                        <h3 class="font-semibold text-lg mb-2">Bibliothèque de ressources</h3>
+                        <p class="text-background-100 text-sm">Guides et outils téléchargeables</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Recognition & Trust Signals -->
+    <section class="py-20 bg-surface-50">
+        <div class="sanctuary-container">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-4xl md:text-5xl text-primary mb-4">Reconnu et de confiance</h2>
+                <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+                    Membre fier du répertoire BHC des praticiens de santé mentale noirs
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                        <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Certifiée</h3>
+                    <p class="text-sm text-text-secondary">Thérapeute de massage agréée</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-secondary/10 rounded-full flex items-center justify-center">
+                        <svg class="w-10 h-10 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Éducatrice</h3>
+                    <p class="text-sm text-text-secondary">Instructrice certifiée de massage infantile</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-accent/10 rounded-full flex items-center justify-center">
+                        <svg class="w-10 h-10 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Doula</h3>
+                    <p class="text-sm text-text-secondary">Soutien de fertilité à postpartum</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-success/10 rounded-full flex items-center justify-center">
+                        <svg class="w-10 h-10 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Répertoire BHC</h3>
+                    <p class="text-sm text-text-secondary">Praticienne reconnue</p>
+                </div>
+            </div>
+
+            <!-- Indigenous Land Acknowledgment -->
+            <div class="mt-16 max-w-3xl mx-auto text-center">
+                <p class="text-text-secondary italic">
+                    Nous reconnaissons que Bond Through Touch Wellness opère sur le territoire traditionnel non cédé des peuples Kanien'kehá:ka (Mohawk), gardiens de ces terres depuis des temps immémoriaux. Nous honorons leur sagesse ancestrale en matière de guérison et de connexion communautaire.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+        <div class="sanctuary-container">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="22" fill="white" opacity="0.1"/>
+                            <path d="M24 8C15.163 8 8 15.163 8 24s7.163 16 16 16 16-7.163 16-16S32.837 8 24 8zm0 28c-6.627 0-12-5.373-12-12S17.373 12 24 12s12 5.373 12 12-5.373 12-12 12z" fill="white"/>
+                            <path d="M24 16c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" fill="#cea4f7"/>
+                            <circle cx="24" cy="24" r="3" fill="#e8dcc4"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-headline text-2xl">Bond Through Touch</h3>
+                            <p class="text-sm text-background-100">Wellness & Healing</p>
+                        </div>
+                    </div>
+                    <p class="text-background-100 mb-6">
+                        Sanctuaire de guérison holistique enraciné dans la sagesse ancestrale, offrant des soins culturellement compétents pour les familles noires et les communautés marginalisées.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors duration-base" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors duration-base" aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-accent transition-colors duration-base" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Navigation rapide</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="text-background-100 hover:text-accent transition-colors duration-fast">Services</a></li>
+                        <li><a href="about.html" class="text-background-100 hover:text-accent transition-colors duration-fast">À propos de Nora</a></li>
+                        <li><a href="booking.html" class="text-background-100 hover:text-accent transition-colors duration-fast">Réserver</a></li>
+                        <li><a href="resources.html" class="text-background-100 hover:text-accent transition-colors duration-fast">Ressources</a></li>
+                        <li><a href="community.html" class="text-background-100 hover:text-accent transition-colors duration-fast">Communauté</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-6">Contact</h4>
+                    <ul class="space-y-3 text-background-100">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>Montréal, Québec, Canada</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <a href="mailto:info@bondthroughtouch.ca" class="hover:text-accent transition-colors duration-fast">info@bondthroughtouch.ca</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <a href="tel:+15141234567" class="hover:text-accent transition-colors duration-fast">+1 (514) 123-4567</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="divider-sanctuary border-white/20"></div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-8">
+                <p class="text-background-100 text-sm">
+                    © 2026 Bond Through Touch Wellness. Tous droits réservés.
+                </p>
+                <div class="flex gap-6 text-sm">
+                    <a href="javascript:void(0)" class="text-background-100 hover:text-accent transition-colors duration-fast">Politique de confidentialité</a>
+                    <a href="javascript:void(0)" class="text-background-100 hover:text-accent transition-colors duration-fast">Conditions d'utilisation</a>
+                    <a href="javascript:void(0)" class="text-background-100 hover:text-accent transition-colors duration-fast">Accessibilité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll-based header background
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-elevated');
+            } else {
+                header.classList.remove('shadow-elevated');
+            }
+        });
+    </script>
+</body>
+</html>

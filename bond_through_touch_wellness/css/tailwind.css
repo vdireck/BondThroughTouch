@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors - Deep spiritual authority, grounding wisdom */
+    --color-primary: #410357; /* deep-plum-900 */
+    --color-primary-50: #f5f0f7;
+    --color-primary-100: #e8ddef;
+    --color-primary-200: #d1bbe0;
+    --color-primary-300: #b599d1;
+    --color-primary-400: #9877c2;
+    --color-primary-500: #7c55b3;
+    --color-primary-600: #5f3390;
+    --color-primary-700: #410357; /* primary */
+    --color-primary-800: #310242;
+    --color-primary-900: #21012d;
+
+    /* Secondary Colors - Feminine power, intuitive action moments */
+    --color-secondary: #724978; /* mauve-600 */
+    --color-secondary-50: #f7f3f8;
+    --color-secondary-100: #ede5ef;
+    --color-secondary-200: #dbcbdf;
+    --color-secondary-300: #c9b1cf;
+    --color-secondary-400: #b797bf;
+    --color-secondary-500: #a57daf;
+    --color-secondary-600: #724978; /* secondary */
+    --color-secondary-700: #5a3a5f;
+    --color-secondary-800: #422b46;
+    --color-secondary-900: #2a1c2d;
+
+    /* Accent Colors - Healing energy, gentle interactive highlights */
+    --color-accent: #cea4f7; /* lavender-300 */
+    --color-accent-50: #faf7fe;
+    --color-accent-100: #f4eefd;
+    --color-accent-200: #e9ddfb;
+    --color-accent-300: #cea4f7; /* accent */
+    --color-accent-400: #b87df3;
+    --color-accent-500: #a256ef;
+    --color-accent-600: #8c2feb;
+    --color-accent-700: #6f1ec5;
+    --color-accent-800: #52169e;
+    --color-accent-900: #350e77;
+
+    /* Background Colors - Warm sanctuary canvas, natural comfort */
+    --color-background: #e8dcc4; /* sand-200 */
+    --color-background-50: #fdfcf9;
+    --color-background-100: #f9f6ed;
+    --color-background-200: #e8dcc4; /* background */
+    --color-background-300: #d7c29b;
+    --color-background-400: #c6a872;
+    --color-background-500: #b58e49;
+    --color-background-600: #947320;
+    --color-background-700: #6d5518;
+    --color-background-800: #463710;
+    --color-background-900: #1f1908;
+
+    /* Surface Colors - Elevated content areas, subtle depth */
+    --color-surface: #f4f0e8; /* warm-white-100 */
+    --color-surface-50: #fefdfb;
+    --color-surface-100: #f4f0e8; /* surface */
+    --color-surface-200: #e9e1d1;
+    --color-surface-300: #ded2ba;
+    --color-surface-400: #d3c3a3;
+    --color-surface-500: #c8b48c;
+    --color-surface-600: #a89466;
+    --color-surface-700: #7d6e4c;
+    --color-surface-800: #524832;
+    --color-surface-900: #272218;
+
+    /* Text Colors - Clear reading, warm authority */
+    --color-text-primary: #2d1b35; /* deep-purple-900 */
+    --color-text-secondary: #5a4a61; /* muted-purple-600 */
+    --color-text-tertiary: #8a7a91; /* muted-purple-400 */
+
+    /* Semantic Colors */
+    --color-success: #7c9885; /* sage-green-500 */
+    --color-success-light: #a8c4b0;
+    --color-success-dark: #5a7a63;
+
+    --color-warning: #d4a574; /* warm-tan-400 */
+    --color-warning-light: #e4c5a0;
+    --color-warning-dark: #b8864e;
+
+    --color-error: #b8756b; /* terracotta-500 */
+    --color-error-light: #d19d95;
+    --color-error-dark: #9a5a51;
+
+    /* Shadow Values */
+    --shadow-soft: 0 4px 20px rgba(65, 3, 87, 0.08);
+    --shadow-elevated: 0 8px 32px rgba(65, 3, 87, 0.12);
+    --shadow-deep: 0 12px 48px rgba(65, 3, 87, 0.16);
+
+    /* Border Values */
+    --border-subtle: 1px solid rgba(114, 73, 120, 0.15);
+    --border-medium: 1px solid rgba(114, 73, 120, 0.25);
+    --border-strong: 1px solid rgba(114, 73, 120, 0.35);
+
+    /* Animation Timing */
+    --transition-base: 350ms ease-out;
+    --transition-fast: 200ms ease-out;
+    --transition-slow: 500ms ease-out;
+  }
+*  {
+    
+  }
+
+  body {
+    @apply bg-background text-text-primary font-body antialiased;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline text-text-primary;
+    font-weight: 400;
+  }
+}
+
+@layer components {
+  /* Sanctuary Container */
+  .sanctuary-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Room Transition Effects */
+  .room-transition {
+    transition: transform var(--transition-base), opacity var(--transition-base);
+  }
+
+  .room-enter {
+    @apply opacity-0 translate-y-8;
+  }
+
+  .room-enter-active {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Sacred Geometry Elements */
+  .sacred-glow {
+    box-shadow: 0 0 40px rgba(206, 164, 247, 0.3),
+                0 0 80px rgba(206, 164, 247, 0.15);
+  }
+
+  /* Breath Animation */
+  @keyframes breathe {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+  }
+
+  .breath-animation {
+    animation: breathe 4s ease-in-out infinite;
+  }
+
+  /* Staggered Content Reveal */
+  .stagger-fade-in > * {
+    @apply opacity-0 translate-y-4;
+    animation: fadeInUp var(--transition-base) ease-out forwards;
+  }
+
+  .stagger-fade-in > *:nth-child(1) { animation-delay: 0ms; }
+  .stagger-fade-in > *:nth-child(2) { animation-delay: 200ms; }
+  .stagger-fade-in > *:nth-child(3) { animation-delay: 400ms; }
+  .stagger-fade-in > *:nth-child(4) { animation-delay: 600ms; }
+  .stagger-fade-in > *:nth-child(5) { animation-delay: 800ms; }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Button Styles */
+  .btn-primary {
+    @apply bg-primary text-white font-cta font-semibold px-6 py-3 rounded-lg 
+           shadow-soft hover:shadow-elevated transition-all duration-[350ms]
+           hover:bg-primary-600 active:bg-primary-800;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white font-cta font-semibold px-6 py-3 rounded-lg
+           shadow-soft hover:shadow-elevated transition-all duration-[350ms]
+           hover:bg-secondary-700 active:bg-secondary-800;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-primary font-cta font-semibold px-6 py-3 rounded-lg
+           shadow-soft hover:shadow-elevated transition-all duration-[350ms]
+           hover:bg-accent-400 active:bg-accent-500;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-primary font-cta font-medium px-6 py-3 rounded-lg
+           border border-primary/20 hover:bg-primary/5 hover:border-primary/30
+           transition-all duration-[350ms];
+  }
+
+  /* Card Styles */
+  .card-sanctuary {
+    @apply bg-surface rounded-2xl shadow-soft p-6 
+           hover:shadow-elevated transition-all duration-[350ms];
+  }
+
+  .card-elevated {
+    @apply bg-surface rounded-2xl shadow-elevated p-8;
+  }
+
+  /* Form Elements */
+  .input-sanctuary {
+    @apply w-full px-4 py-3 bg-surface border border-secondary/15 rounded-lg
+           text-text-primary placeholder:text-text-tertiary
+           focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20
+           transition-all duration-[350ms];
+  }
+
+  .textarea-sanctuary {
+    @apply w-full px-4 py-3 bg-surface border border-secondary/15 rounded-lg
+           text-text-primary placeholder:text-text-tertiary resize-none
+           focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20
+           transition-all duration-[350ms];
+  }
+
+  /* Status Badges */
+  .badge-success {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium
+           bg-success/10 text-success border border-success/20;
+  }
+
+  .badge-warning {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium
+           bg-warning/10 text-warning border border-warning/20;
+  }
+
+  .badge-error {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium
+           bg-error/10 text-error border border-error/20;
+  }
+
+  /* Divider */
+  .divider-sanctuary {
+    @apply border-t border-secondary/15 my-8;
+  }
+
+  /* Ambient Overlay */
+  .ambient-overlay {
+    @apply absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none;
+  }
+}
+
+@layer utilities {
+  /* Text Utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Smooth Scrolling */
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom Shadows */
+  .shadow-sanctuary-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-sanctuary-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .shadow-sanctuary-deep {
+    box-shadow: var(--shadow-deep);
+  }
+
+  /* Gradient Text */
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  .text-gradient-accent {
+    @apply bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent;
+  }
+
+  /* Backdrop Blur */
+  .backdrop-sanctuary {
+    @apply backdrop-blur-md bg-surface/80;
+  }
+}
